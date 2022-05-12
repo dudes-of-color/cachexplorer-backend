@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "corsheaders",
     # local
     "accounts",
-    "cookie_stand",
+    "cache_explorer",
 ]
 
 MIDDLEWARE = [

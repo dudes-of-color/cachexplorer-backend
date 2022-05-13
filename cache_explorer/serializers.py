@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import CacheExplorer
+from .models import Cache
 
 
-class CacheExplorerSerializer(serializers.ModelSerializer):
+class CacheSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CacheExplorer
+        model = Cache
         fields = "__all__"

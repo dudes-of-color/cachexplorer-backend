@@ -3,10 +3,10 @@ from django.db import models
 
 
 class Cache(models.Model):
-    title = models.CharField(max_length=256, default='ADD TITLE')
+    title = models.CharField(max_length=256, default='TITLE')
     location = models.CharField(max_length=256)
-    lat = models.CharField(max_length=256)
-    long = models.CharField(max_length=256)
+    lat = models.FloatField()
+    long = models.FloatField()
     img = models.CharField(max_length=1024)
     description = models.TextField(blank=True)
     owner = models.ForeignKey(
@@ -14,4 +14,4 @@ class Cache(models.Model):
     )
     
     def __str__(self):
-        return self.title + 'located @' + self.location
+        return self.title + ' located @' + self.location

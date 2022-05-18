@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     # local
     "accounts",
     "cache_explorer",
+    "rest_framework_simplejwt.token_blacklist"
 ]
 
 MIDDLEWARE = [

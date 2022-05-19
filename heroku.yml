@@ -4,4 +4,4 @@ build:
 release:
   image: web
 run:
-  web: gunicorn project.wsgi --workers 4
+  web: gunicorn project.wsgi:application --bind 0.0.0.0:8000 --workers 4
